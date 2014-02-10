@@ -1,0 +1,162 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>Playing-with-Clojure-Map-Reduce-and-Loop-Recur</title></head><body><h1 id="playing-with-clojure-map-reduce-and-loop-recur">Playing with Clojure Map/Reduce and Loop/Recur</h1>
+<p><em>By Xiaoni Lai (Olivia) 2 Feb 2014</em></p>
+<p>Clojure is a Lisp-like programming language that runs on JVM. It is actually one of the four languages that are analyzed by our call graph research study (the other three are JRuby, Jython and Scala), because Frank believes that their shared property of Java interoperability makes it possible to compare the call graphs among these different languages based on their Java bytecode generated. Anyway, until today I started to write some Clojure programs.</p>
+<p>It turns out that Clojure somewhat reminds me of Scheme, the first language I've experienced before I started college. This might be due to the fact that Clojure function looks like this:
+    <code>(+ 1 2)</code>
+...with operator at the beginning and arguments followed after that. But actually, Clojure has some other peculiar features. One very superficial observation is that all functions are included in brackets. Yes, brackets. It seems like the compiler takes in everything as a list, including function calls.</p>
+<p>There are two very useful set of macros used in Clojure. The first one being the map/reduce and second one is loop/recur.</p>
+<ul>
+<li>Map / Reduce</li>
+</ul>
+<p>Map takes in a function that only takes one argument, as well as a sequence, so that that one-argument function would be operated over the sequence of items, one by one, and produce a sequence of results. Reduce takes in a function that takes two arguments, and a sequence, so that the two-argument function would be operated on the first two items of the sequence, and then on their result and the third item, and so on so forth.</p>
+<p>Let me show you the code snippets I've written:</p>
+<pre><code>(defn is-upper-triangular?
+    [m]
+    (let [col-st-row (fn [r] (take r (get m r)))]
+        (every? zero? (reduce concat (map col-st-row (range 0 (count m)))))
+    )
+)
+</code></pre>
+<p>Within the function <code>is-upper-triangular?</code>, it is binding a new function <code>col-st-row</code> which takes in row number and returns a prefix of that row in the matrix. Then, we'll "map" this <code>col-st-row</code> over the sequence of digits from 0 to the total row number of the matrix. This produces the a sequence of sequences. Then, we will "reduce" it by applying the concatenation function over this sequence of sequences so that they combine together to become one whole sequence. Lastly, the <code>every?</code> applies the <code>zero?</code> function over the sequence and produce <code>true</code> only when every digit in the sequence is zero.</p>
+<p>One more example:</p>
+<pre><code>(defn is-square? [m]
+    (let [get-m-count (fn [r] (count (get m r)))]
+    ( every? (fn [c] (== (count m) c)) (map get-m-count (range 0 (count m)))))
+)
+</code></pre>
+<p>This function is determining whether an input matrix is a square matrix, i.e., row number equals to column number.</p>
+<ul>
+<li>Loop / Recur</li>
+</ul>
+<p>Here it comes the obscure syntax of Clojure -- Loop / Recur. Instead of writing the recursion in a more explicit way, Clojure provides this weird syntax for programmers to perform the job. Look at this piece of code I've written, which is performing exactly the same task as <code>is-square?</code> as above.</p>
+<pre><code>(defn is-square? [m]
+(loop [r -1 issq true]
+    (if (== r (dec (count m)))
+    issq
+    (recur (inc r) (and issq (== (count m) (count (get m (inc r))))))))
+)
+</code></pre>
+<p>Firstly, the square brackets after the <code>loop</code> contains the bindings I've set; in this case, i is bound to -1 and issq is bound to true. Such bindings would change when recursion rewires back to this point later on. Next, it comes to our recursion part. If row number is equal to size of matrix minus 1, then return the end result "issq", which is a boolean value showing whether the size of each and every row is equal to the row number. If it is not true, then we recurse. The <code>recur</code> keyword will re-set the bindings: r would be reset to <code>(inc r)</code> and issq would be reset to <code>(and issq (== (count m) (count (get m (inc r)))))</code>.</p>
+<p>Somehow, such a loop/recur feature in Clojure yields some compliements and criticisms at the same time. Some programmers think that it is cool. Some hate it because it is kind of obscure and hard to debug. </p></body></html>

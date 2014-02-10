@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My University | Coding Poet :: Olivia Lai's Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/docs.css" rel="stylesheet">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<meta name="description" content="Olivia Lai's Personal Site">
+	<meta name="author" content="Xiaoni Lai (Olivia)">
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">  
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="homeIcon" href="index.html"><img src="img/home.png" style="width:auto; z-index:0; height:auto;"></a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="cv.html">Curriculum Vitae</a></li>
+						<li><a href="#" class="active">My University</a></li>
+						<li><a href="writings.html">Writings</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="jumbotron"><img src="img/header_small.png"></header>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3 bs-docs-sidebar">
+				<ul class="nav nav-list bs-docs-sidenav affix">
+					<li><a href="#overview"><i class="icon-chevron-right"></i>My University Courses</a></li>
+					<li class="nav-header">Computer Science</li>
+					<li><a href="#fundamentals"><i class="icon-chevron-right"></i>Fundamentals</a></li>
+					<li><a href="#architecture"><i class="icon-chevron-right"></i>Computer Architecture</a></li>
+					<li><a href="#db"><i class="icon-chevron-right"></i>Databases</a></li>
+					<li><a href="#research"><i class="icon-chevron-right"></i>Research Methodologies</a></li>
+					<li><a href="#ai"><i class="icon-chevron-right"></i>Artificial Intelligence</a></li>
+					<li><a href="#algorithms"><i class="icon-chevron-right"></i>Algorithms</a></li>
+					<li><a href="#se"><i class="icon-chevron-right"></i>Software Engineering</a></li>
+					<li><a href="#urop"><i class="icon-chevron-right"></i>UROP</a></li>
+					<li><a href="#fyp"><i class="icon-chevron-right"></i>Dissertation</a></li>
+					<li><a href="#others"><i class="icon-chevron-right"></i>Others</a></li>
+				</ul>
+
+			</div>
+			<div class="span9">
+				<section id="overview">
+					<div class="page-header">
+						<h1>My University Courses</h1>
+					</div>
+					<table class="table table-bordered">
+						<tr><th><p style="color:#0B610B;">The purpose of writing this page is to serve as a place for me to remember what I had actually learnt during university. Moreover, high school graduates might find the following information useful for them to decide whether to choose CS as a college major.</p></th></tr>
+					</table>
+					
+					<h5>I attended the School of Computing (SoC) in National University of Singapore (NUS). The four years in SoC was a hard but joyful learning journey for me, as I've grown up from a computing newbie to an adult who is ready to join the dynamic workplace. I felt fortunate to choose Computer Science (CS) as my college major. 
+						<img src="img/graduation.png" style="float: right; margin: 10px;">
+					Throughout the years in university, I enjoyed learning the courses and found that I gradually became so addicted to coding. I like to investigate how a certain thing work; whenever I managed to figure out how to make something functioning, I felt a great sense of accomplishment and happiness.</h5>
+					<h5>I am currently considering pursuing a graduate degree in Computer Science to continue my learning journey. Many of my friends commented that a research job is very suitable to my personality, as in their eyes I am that kind of person who like to analyze things and delve into the core parts of problems to come up with solutions.
+					</h5>
+					<h5>Here I've consolidated the list of courses I've taken. In particular, I have put in the <a href="#urop">Undergraduate Research Opportunities Program</a> and <a href="#fyp">Final Year Dissertation</a>. Some sections are longer than others, such as <a href="#db">Databases</a>, <a href="#se">Software Engineerings</a> and <a href="#algorithms">Algorithms</a>, because I've chosen to study more courses from these subfields.</h5>
+					
+					<p>&nbsp;</p>
+				</section>
+				<section id="fundamentals">
+					<div class="page-header">
+						<h1>Programming Fundamentals</h1>
+					</div>
+
+					<h3>CS1101: Programming Methodologies</h3>
+					<p>This is the most fundamental course for all SoC students:)</p>
+					<p>It was named as CS1101 at the time when I studied as a freshman. But later it was changed to CS1010. The content should remain similar.</p>
+					<p>Some students say that this is a course teaching Java, or Scheme, or C++, or C, depending on which variant of CS1101 you're taking. I disagree with this view. Although we did learn beginning programming skills here, the language itself is just a platform to facilitate teaching of programming methodologies. The essence of the course is to teach students something universal to all computer languages: information about bit/byte, data types, concepts of variables and constants, logic flow (negation, if/else, loop), recursion, exception handling, etc.</p>
+					<h4>Teaching</h4>
+					<p>I couldn't recall much of what I've learnt in this module because it was too long ago. However, when I was in my senior year, I did teach freshmen tutorials on these courses. I also created some presentation slides in my teaching sessions. Here I would share them as follows: 
+					</p>
+					<br>
+					<div class="tabbable tabs-left"> <!-- Only required for left/right tabs -->
+						  <ul class="nav nav-tabs">
+						    <li class="active"><a href="#tab1" data-toggle="tab">Teaching C for SoC freshmen</a></li>
+						    <li><a href="#tab2" data-toggle="tab">Teaching C++ for Engineering students</a></li>
+						  </ul>
+						  <div class="tab-content">
+						    <div class="tab-pane active" id="tab1">
+						    	Some sample CS1010 lecture slides designed by me: (Each session is 2 hr)
+								<ul>
+									<li><a href="assets/CS1010DiscussionSessionWeek6.pptx">Week 6 Tutorial</a></li>
+									<li><a href="assets/CS1010DiscussionSessionweek13.pptx">Week 13 Tutorial</a></li>
+								</ul>
+						    </div>
+						    <div class="tab-pane" id="tab2">
+						        This is the tutorial for CS1010E. My students mainly came from non-CS majors. They were required to take this introductory programming course in SoC. I graded their lab assignments and then explained to them the solutions and best problem solving approaches in class. Sometimes, I would also explained some concepts taught in their lectures in greater details in order to help the weaker students.
+						    </div>
+						  </div>
+					</div>
+					<br>
+					<p>My teaching received the following <strong>feedback from students</strong> in CS1010 class: (grammatically corrected) 
+					</p>
+					<p>
+						<br>
+						What are the teacher's strengths?
+						<ol>
+							<li>Preparation always done. Ready with all relevant materials.</li>
+							<li>Able to go through the questions step by step. She is well-prepared for lessons, e.g., PowerPoint slides, etc..</li>
+							<li>She knows the concept well; and she's always prepared for the tutorial.</li>
+							<li>Approachable for help when needed.</li>
+							<li>She is very efficient in her teaching methods and replying emails for consultations. She explains complex concepts in a way that is easy to understand.</li>
+							<li>She is very good in her programming skills.</li>
+							<li>She has a lot of preparation, e.g., slides and questions.</li>
+						</ol>
+						<br>
+						What improvements would you suggest to the teacher?
+						<ol>
+						<li>Maybe be a little more engaging during the discussion session. The classroom is drop-dead quiet during discussion. Mostly a one-way conversation.</li>
+						<li>Keep up the good work.</li>
+						<li>She could explain the discussion question in a more interesting way.</li>
+						<li>Excellent! Keep up the good attitude!</li>
+						<li>She'd better engage the class instead of speaking to herself.</li>
+						<li>She could try to speak louder and make sure she's heard by the whole class. She could also use a visualiser, as using a mouse to draw/write is not only time-consuming but also messy.</li>
+						<li>Should try to make discussion sessions more interesting.</li>
+					</ol>
+					</p>
+					<p>Although not perfect, the feedback was still quite encouraging for me. The complete set of feedback is available in <a href="assets/LAIXIAONIsem1ay1011.pdf">this Teacher Assessment Report</a>. Note that the average score is computed among scores from all faculty members in SoC, including senior lecturers and professors.</p>
+					<br>
+					<h3>CS1102: Data Structures and Algorithms</h3>
+					<p>In the view of many NUS students, CS1101 and CS1102 are famous as the two traditional CS fundamental courses. This course is like a further extension of the CS1101. It touches some slightly more abstract topics in Computer Science, such as Data Abstract Type, Encapsulation, Inheritance, Polymorphism, Linked List, and etc. I was taught by Prof. Tan Sun Teck at that time and he had many years of experience teaching this module.</p>
+					<p>In my memory, the lab assignments in this course were undoubtedly much more difficult than those in CS1101. They involve more in-depth thinkings and require more careful planning. Each week we were assigned with a set of programming lab questions. Quite often, these questions were not meant to be completed within a few hours. In the beginning of week, We needed to discuss among ourselves on the approaches in solving the questions. We then started to code in the middle of week. The debugging process would probably last until the last minute before submission, depending on how we planned the codes.</p>
+					<p>The most time-consuming lab assignment in my memory is a task of writing a sequence of commands mimicking the UNIX file system. For example: &#34;mkdir&#34;, &#34;mv&#34;, &#34;rm&#34;, &#34;touch&#34;. The complicated part is that the directory system does have recursive structure, so there would be a lot of cases to handle.</p>
+					<p>If you are interested, feel free to try <a href="assets/lab2.doc">this lab</a> out. :) I think this serves as a good exercise even for those professional programmers.
+				</section>
+				<section id="architecture">
+					<div class="page-header">
+						<h1>Computer Architecture</h1>
+					</div>
+					<h3>CS2100: Computer Organization</h3>
+						<p>This is a course teaching students who have some basic programming concepts to have further understanding on the computer. Normally, students who find this course interesting might continue their study in Operating System and some more lower level computer architecture courses. I was taught by <a href="http://www.comp.nus.edu.sg/~tantc/">Aaron Tan</a>, a popular teacher among students. He made the course quite interesting and easy to learn for us. The lectures were well planned and the homeworks sufficiently covered the topics. So it was not hard to follow if students (such as me^_^) attend all classes and do all homeworks regularly. <img src="img/logic_Trainner.jpg" class="pictureInText"></p>
+						<p>Some topics covered are:
+							<ul>
+								<li>Data representation systems</li>
+								<li>Combinational and sequential circuit design</li>
+								<li>Assembly language</li>
+								<li>Processor execution cycles</li>
+								<li>Pipelining</li>
+								<li>Memory hierarchy</li>
+								<li>Input/output systems</li>
+							</ul>
+						</p>
+						<p>Among these topics, the pipelining concept is widely adopted in many practices in everyday life as well.</p>
+						<p>We also learnt a lot about logic gates (which can become very very complicated when different types of gates are combined together to form a large logic circuit!) and encoders/decoders. This topic is interesting; I remember we need to play with this logic trainer (picture above) and plug some integrated circuit chips onto its breadboard. </p>
+						<p>This is also my only time dealing with assembly language. In the later years, I focused more on higher level programming languages. But I would say these basic concepts are undoubtedly necessary for everyone who wants to be a programmer.
+						</p> 
+					
+					<br>
+					<h3>CS2105: Computer Networks</h3>
+					<p>There are a lot of topics in this module. But I remember most on the Cryptography and Wireless LAN. After all, these are highly relevant to everyday contexts. This is also the first time I learnt about <a href="http://en.wikipedia.org/wiki/RSA_(algorithm)">RSA</a> and the algorithm helped me understand the encryption/decription mechanism worked in many common scenarios. </p>
+					<p>I also did two projects with another girl in SoC. At the time, I hadn't studied the concept of multi-threading because I took this course one semester earlier than the &#34;Operating System&#34; course (mentioned below), so I was struggling for quite some time. But soon I learnt that I should not limit myself to school teaching materials and went to look for online tutorials in multi-threading implementations. It helped a lot in my projects. At the same time, this made me become more aware that self-learning is a very important skill for programmers.</p>
+					<p><strong>Here are the two projects I had done:</strong>
+						<table class="table">
+							<tr><th>Parallel Web Crawler</th>
+							<td>a web crawler which sends HTTP requests to many servers in many threads simultaneously</td></tr>
+							<tr><th>Instant Messenger</th>
+							<td>I explored the concept of Observers and Listeners and it turned out not easily implementable. In the end, I used Client/Server mechanism to implement it, i.e., one single server handling communication among different client threads.</td></tr>
+						</table>
+					</p>
+					<br>
+					<h3 id="os">CS2106: Operating System</h3>
+					   <p>A very common module among undergraduate CS syllabi in the world:)</p>
+					   <p>There are many very useful concepts taught here:
+					   	  <dl class="dl-horizontal">
+					   	  	<dt>Process Scheduling</dt>
+					   	  	<dd>Presenting scenarios of multi-processes problems under OS different environments. This concept is particularly useful when I was coding some interactive systems.</dd>
+					   	  	<dt>Process Synchronization</dt>
+					   	  	<dd>More to go on multi-processes problems. It covers the concepts of deadlocks, critical section, Peterson's Algorithm and Semaphore. I also learnt some famous examples on process communications, such as the <a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem">Dining Philosopher</a>. I re-encountered these concepts in my <a href="#parallel">another module</a> in Year 4 -- Parallel and Distributed Algorithms. </dd>
+					   	  	<dt>Memory Management</dt>
+					   	  	<dd>Concepts about memory allocation and physical/logical addresses. It also covers the memory hierarchy -- from disk, to main memory, cache, and register. The figures for the access speed and size of different memory components are outdated in today's technologies. Still, these concepts are hard core foundation topics for programmers.</dd>
+					   	  	<dt>File System</dt>
+					   	  	<dd>It covers two case studies: MS-DOS FAT File System and Linux Ext2 File System.</dd>
+					   	  </dl>
+					   </p>
+					   <p>In addition, I also did quite a number of challenging lab assignments in this module. All were written in C under Unix-based Operating System. Here is <a href="assets/Lab4.pdf">an example</a> of the lab</a> (Solution unfound...Sorry:P ).</p>
+				</section>
+				<section id="db">
+					<div class="page-header">
+						<h1>Databases</h1>
+					</div>
+					<p>Database Systems was one of my specializations in SoC (The other one is <a href="#algorithms">Algorithms</a>). I had taken almost all the database courses below 6000-level in SoC, including CS2102S Database Systems (A+), CS3223 Database Systems Implementation (A), CS4221 Database Design (A) and CS5226 Database Tuning (A+). In NUS, A is the grade given to the students with best performances in a subject, whilst A+ is a grade given to students who perform exceptionally well (there could be zero students getting A+ if the professor is unhappy with the performance of whole cohort). <img src="img/Happy_smiley_face.png" title=":-P"></p>
+					<br>
+					<h3>CS2102S Database Systems</h3>
+					<p>I took this as a summer course. It serves as a good introductory course to SQL and many fundamental database concepts, such as table, index, primary/foreign key, ER Diagram, and so on so forth. We also touched on normalization. But compared to the depth I've learnt about normalization in a later module, this was quite a little. </p>
+					<p>As this is the S-variant of CS2102, we also did some very tiny researches on XML and its closely related concepts such as DTD or XQuery. This is <a href="assets/Xpath.ppt">my project on XPath</a>. (Ahh! All the fancy PPT styles created by freshmen...)</p>
+					<p>Perhaps the more impressive part about this module is <a href="assets/Group03.pdf">a website about library catalog</a> we've created using MySQL and PHP. I designed the data schema for this project; since then, I am always the person who design the data schema for a team comprising people with comparable programming skills as mine. Until now, I am still taking the role of designing data schema in my TA Action Learning Project in Credit Suisse.</p>
+					<br>
+					<h3>CS3223 Database Systems Implementation</h3>
+					<p>This module covers more on the internals of database systems. It gives me a much more detailed view on the database system itself from the developer's point of view, unlike CS2102S which focuses more from user's angle. Of course, database systems differ vastly from one vendor to another vendor. Oracle, DB2 and Microsoft SQL Server all possess different internal implementations and that's why they have different advantages and disadvantages for database users to consider and pick. This module is trying to make these internal concepts generic so that students could grasp the main parts of all the database implementations.</p>
+					<p>Some concepts it cover look highly similar to those in &#34;Computer Organization&#34; and &#34;Operating System&#34; (Again this module!). However, the concepts covered in the OS module are some mechanisms implemented in main memory or cache in the file system, while the concepts covered in this module are implementation in disks and main memory. </p>
+					<table class="table table-bordered">
+						<tr>
+							<th>Module</th>
+							<th>Discussing How to Avoid Access</th>
+							<th>Discussing How to Access This Instead</th>
+						</tr>
+						<tr>
+							<td>CS2100 Computer Organization</td>
+							<td></td>
+							<td>Register</td>
+						</tr>
+						<tr>
+							<td>CS2106 Operating Systems</td>
+							<td>Main Memory</td>
+							<td>Cache</td>
+						</tr>
+						<tr>
+							<td>CS3223 Database Systems Implementation</td>
+							<td>Disk</td>
+							<td>Main Memory</td>
+						</tr>
+					</table>
+					<p>The above table was not official. It is just showing my personal opinion. Of course, These three module undoubtedly do not only cover the topics on which to avoid or which to use instead. These are just a small portion of each of them.</p>
+					<p>I also did two projects and a few lab assignments. Basically, I need to play around with the <abbr title="an open source database system loved by many db researchers">PostgreSQL</abbr>. 
+						<ol>
+							<li>Implementing <abbr title="Least Recently Used">LRU</abbr> replacement policy in PostgreSQL
+								<ul class="unstyled">
+									<li>PostgreSQL 8.4.2 implemented a variant of CLOCK replacement algorithm in its buffer manager. </li>
+									<li>My job is to replace this with the LRU one.</li>
+									<li>This is the <a href="assets/cs3223_assign1.pdf">sample assignment topic</a> edited from Prof. Chan Chee Yong. This is the <a href="assets/submit_cs3223_assign1.zip">code</a> I've written for the assignment. (Hover <abbr title="xiaonizi">this</abbr> for password to unzip it)</li>
+								</ul>
+							</li>
+							<li>Implementing a count-based sorting algorithm to perform external sorting in PostgreSQL
+								<ul class="unstyled">
+									<li>Only focused on sorting heap tuples, i.e., data records</li>
+								</ul>
+							</li>
+						</ol>
+						The codes for these two projects were in fact quite minimal. The most difficult part lied in the algorithm planning.
+					</p>
+					<br>
+					<h3>CS4221 Database Design</h3>
+					<p>The portion in this module which gave me most impression would be the database normalization in relational model: <abbr title="First Normal Form">1NF</abbr>, <abbr title="Second Normal Form">2NF</abbr>,
+						<abbr title="Thid Normal Form">3NF</abbr>, <abbr title="Boyce-Codd Normal Form">BCNF</abbr>, <abbr title="Fourth Normal Form">4NF</abbr>, <abbr title="Fifth Normal Form">5NF</abbr>/Project-Join Form! Domain-Key Normal Form!... Yes, true. We need to remember how to identify all these normal forms and know the procedures to convert one to another. And this is just a portion of Relational Model. Other than that, we learnt Entity-relationship Model, Object-oriented Model and many other data models. On top of these, we also learnt some physical designs.</p>
+					<p>This is the first 4000-level module I took. One very important difference of 4000-level module compared to other lower level modules is that the materials we learnt were not necessarily well structured and well prepared in a stack of nicely-formatted lecture notes. They could be just a few pieces of research paper from here and there. All we need was to read that research paper and organize the learning materials according to our own wills. Of course, lecturers could turn a research paper into PowerPoint slides in class. However, I found that the learning effect would be much better if one reads the research paper directly. I remember that there was one chapter which contained information from a published paper from the professor himself.</p>
+
+					<h4>Project: Resolving Schematic Discrepancy in the Integration of Entity-Relationship Schemas</h4>
+					<p>I also did a project, with two other students. Basically, we implemented the algorithm recommended by one of the lecturer's published papers. Interestingly, we discovered some portions of the algorithm which are somewhat &#34;un-implementable&#34; and mentioned to the lecturer. He happily accepted the flaw we've pointed out, although it was a very tiny flaw compared to the smooth flow of the whole picture. Sometimes, pseudo-algorithms may look perfectly fine unless you really go to implement them out. <img src="img/dataStructure.jpg" style="float: left; margin: 10px;"></p>
+					<p>This is <a href="assets/er2004heqi.pdf">the research paper</a> on which we were working. Our team implemented the algorithm mentioned in this paper using Python. We named it "DiscrepancyRemover". </p>
+					<p>One of my contribution to the project was that I designed the data schema (as follows). I helped the team clarify the unit concepts mentioned in the paper and tried to establish a sensible relationship among these unit concepts from the paper. We implemented each of these units in Python classes. Note that &#34;Entity&#34; is a super class of &#34;Relationship&#34;. I came up with this idea because in ER-Diagram we have the idea of abstracting relationship to become a higher level entity, a process called &#34;Aggregation&#34;. This is <a href="assets/CS4221_Presentation.pptx">our presentation</a>.</p>
+					<br>
+					<h3>CS5226 Database Tuning</h3>
+					<p>After CS4221, I felt no surprise when I again was required to learn a lot of research paper in this module. This is also my first time dealing with Oracle Database. Unfortunately this Oracle db had a compatibility problem with Windows 7 -- a connection problem due to the fact that it created a folder using a fixed IP address and used that folder for authentication and further operations. So I encountered quite a lot of troubles dealing with this. This gave me a bad first impression with Oracle db -- I thought it was too bulky and too commercial in students' project use. However, after I graduated, I realized that there were quite a lot of advantages of Oracle db that I didn't really consider at that moment of time.</p>
+					<p>Database tuning is about changing certain tuning parameters of a running database in order to make it perform better. We started off the module with introduction to the following tuning parameters:</p>
+					<table class="table">
+						<tr>
+							<th>#</th>
+							<th>Parameter</th>
+							<th>My Own Explanation</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Hardware</td>
+							<td>Just spend some more money lah! Buy a better processor (CPU bottleneck), or buy more disks (IO bottleneck), or buy more memory (Buffer Size bottleneck)!</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>IO / Memory Access</td>
+							<td>How to reduce IO access and increase memory access</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Schema</td>
+							<td>Normalization, denormalization, materialized views...</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Index</td>
+							<td>This is my favourite tuning parameter when I was in my previous team in Credit Suisse...Yes I did database tuning in workplace... So this once again proved the usefulness of this course...</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Query</td>
+							<td>Sometimes the query itself is unnecessarily troublesome and long-winded. Should find someway to re-write it. This query tuning is quite complex. Sometimes, database does keep its own statistics counting in order to better understand the pattern of data it is storing, so as to come up with better execution plans for given queries.</td>
+						</tr>
+					</table>
+					</p>
+					<p>So the module went one by one. We learnt about the details of each tuning parameter and experimented it on the machines</p>
+					<h4>Project: Database Performance Dashboard</h4>
+					<p>I worked with another two students to write a database dashboard in PHP, which is to help database administrators to monitor the health of a running database. Of course, besides the existing big DB which is monitored by our program, we also have another small DB to keep our statistics and user customization data. These were all implemented using Oracle database, connected using PHP scripts.</p>
+					<p>We judged that some database parameters are important to the health monitoring activity, such as the <abbr title="percentage of free memory in total memory">PCT_FREE_MEM</abbr> in Shared Pool. Here is <a href="assets/CS5226_Project_Report.pdf">our presentation</a>. It would give you a better idea of what we had done.</p>
+				</section>
+				<section id="research">
+					<div class="page-header">
+						<h1>Research Methodologies</h1>
+					</div>
+					<p><strong>The two modules I've taken under this category were CS2305S and CS2306S taught by <a href="https://www.comp.nus.edu.sg/~leews/">Prof. Lee Wee Sun</a>. These were named as &#34;Problem Solving in Computing&#34; and &#34;Problem Solving in Computing II&#34;.</strong></p>
+					<p>These two modules were for students from the <a href="http://special.comp.nus.edu.sg/home/">Special Programme in Computing</a>. This programme is designed as a research-oriented track for talented School of Computing students.</p>
+					<p>Since these two modules together form a complete set of research learning objectives, I would explain them as a whole.</p>
+					<h3>Task 1: Reading Research Paper</h3>
+					<p>Basically, we need to read through quite a number of research paper which were recognized to have revolutionary impacts on their respective subfields in CS. To show that we fully understood the paper, we need to summarize them within 1000 words. This summary produced needs to answer a set of questions set by lecturer. 
+					</p>
+					<p>Some examples of the paper I've read were shown below (not comprehensive). I also uploaded my summaries here with comments from Prof. Lee. </p>
+					<div class="tabbable"> <!-- Only required for left/right tabs -->
+						  <ul class="nav nav-tabs">
+						    <li><a href="#2305theory" data-toggle="tab">Theory</a></li>
+						    <li><a href="#2305is" data-toggle="tab">Information Systems</a></li>
+						    <li class="active"><a href="#2305crypto" data-toggle="tab">Cryptography</a></li>
+						    <li><a href="#2306networking" data-toggle="tab">Networking</a></li>
+						    <li><a href="#2306ir" data-toggle="tab">Information Retrieval</a></li>
+						  </ul>
+						  <div class="tab-content">
+						    <div class="tab-pane" id="2305theory">
+						    	<dl class="dl-horizontal">
+						    		<dt>Research Paper</dt>
+						    		<dd><a href="http://www.cs.cmu.edu/~sleator/papers/amortized-efficiency.pdf">Amortized Efficiency of List Update and Paging Rules</a></dd>
+						    		<dt>Authors</dt>
+						    		<dd>Daniel D. Sleator and Robert E. Tarjan</dd>
+						    		<dt>Set of Questions</dt>
+						    		<dd><a href="assets/spc/SleatorTarjan.pdf">Questions for this theory paper</a></dd>
+						    		<dt>My Summary</dt>
+						    		<dd><a href="assets/spc/Theory_summaryXiaoni.pdf">My Summary for this theory paper</a></dd>
+						    	</dl>
+						    </div>
+						    <div class="tab-pane" id="2305is">
+						    	<dl class="dl-horizontal">
+						    		<dt>Research Paper</dt>
+						    		<dd><a href="http://home.business.utah.edu/actme/7410/DavisBagozzi.pdf">User Acceptance Of Computer Technology: A Comparison Of Two Theoretical Models</a></dd>
+						    		<dt>Authors</dt>
+						    		<dd>Fred D. Davis, Richard P. Bagozzi And Paul R. Warshaw</dd>
+						    		<dt>Set of Questions</dt>
+						    		<dd><a href="assets/spc/DavisBagozziWarshaw.pdf">Questions for this IS paper</a></dd>
+						    		<dt>My Summary</dt>
+						    		<dd><a href="assets/spc/ISsummary_Xiaoni.pdf">My Summary for this IS paper</a></dd>
+						    	</dl>
+						    </div>
+						    <div class="tab-pane active" id="2305crypto">
+						    	<dl class="dl-horizontal">
+						    		<dt>Research Paper</dt>
+						    		<dd><a href="http://www-ee.stanford.edu/~hellman/publications/24.pdf">New Directions in Cryptography</a></dd>
+						    		<dt>Authors</dt>
+						    		<dd>Diffie, W.; Hellman, M. (1976)</dd>
+						    		<dt>Set of Questions</dt>
+						    		<dd><abbr title="Couldn't find...:(">---</abbr></dd>
+						    		<dt>My Summary</dt>
+						    		<dd><a href="assets/spc/Cryptography_summary.pdf">My Summary for this Cryptography paper</a></dd>
+						    	</dl>
+						    </div>
+						    <div class="tab-pane" id="2306networking">
+						    	<dl class="dl-horizontal">
+						    		<dt>Research Paper</dt>
+						    		<dd><a href="http://ee.lbl.gov/papers/congavoid.pdf">Congestion Avoidance and Control</a></dd>
+						    		<dt>Authors</dt>
+						    		<dd>Van Jacobson and Michael J. Karels</dd>
+						    		<dt>Set of Questions</dt>
+						    		<dd><abbr title="Couldn't find...:(">---</abbr></dd>
+						    		<dt>My Summary</dt>
+						    		<dd><a href="assets/spc/networking_summary_marked.pdf">My Summary for this Networks paper</a></dd>
+						    	</dl>
+						    </div>
+						    <div class="tab-pane" id="2306ir">
+						    	<dl class="dl-horizontal">
+						    		<dt>Research Paper</dt>
+						    		<dd><a href="http://infolab.stanford.edu/~backrub/google.html">The Anatomy of a Large-Scale Hypertextual Web Search Engine</a></dd>
+						    		<dt>Authors</dt>
+						    		<dd>Sergey Brin and Lawrence Page</dd>
+						    		<dt>Set of Questions</dt>
+						    		<dd><a href="assets/spc/BrinPage.pdf">Questions for this IR paper</a></dd>
+						    		<dt>My Summary</dt>
+						    		<dd><a href="assets/spc/IR_summary_Xiaoni.pdf">My Summary for this IR paper</a></dd>
+						    	</dl>
+						    </div>
+						  </div>
+					</div>
+
+					<h3>Task 2: Presentation </h3>
+					<p>Besides writing summaries, students take turn to do presentations on each of these paper. The presenter need to show in-depth understanding of the paper he or she analyzes.</p>
+					<p>The following were two presentations I've done. One is on Alan Turing's paper on Artificial Intelligence; another one is on Xiaoyuan Tu and Demetri Terzopoulos's Artificial Fish.</p>
+					<div class="tabbable"> <!-- Only required for left/right tabs -->
+						  <ul class="nav nav-tabs">
+						    <li class="active"><a href="#2305ai" data-toggle="tab">Artificial Intelligence</a></li>
+						    <li><a href="#2306ani" data-toggle="tab">Animation</a></li>
+						  </ul>
+						  <div class="tab-content">
+						    <div class="tab-pane active" id="2305ai">
+						    	<dl class="dl-horizontal">
+						    		<dt>Research Paper</dt>
+						    		<dd><a href="http://www.csee.umbc.edu/courses/471/papers/turing.pdf">Computing Machinery and Intelligence</a></dd>
+						    		<dt>Authors</dt>
+						    		<dd>Alan Turing</dd>
+						    		<dt>My Presentation</dt>
+						    		<dd><a href="assets/spc/AIpaper_firstFiveSections.pdf">My Presentation for this AI paper</a></dd>
+						    	</dl>
+						    </div>
+						    <div class="tab-pane" id="2306ani">
+						    	<dl class="dl-horizontal">
+						    		<dt>Research Paper</dt>
+						    		<dd><a href="http://www.cs.ucla.edu/~dt/papers/siggraph94/siggraph94.pdf">Artificial Fishes: Physics, Locomotion, Perception, Behavior</a></dd>
+						    		<dt>Authors</dt>
+						    		<dd>Xiaoyuan Tu and Demetri Terzopoulos</dd>
+						    		<dt>My Presentation</dt>
+						    		<dd><a href="assets/spc/2306presentation.odp">My Presentation for this animation paper</a></dd>
+						    	</dl>
+						    </div>
+						  </div>
+					</div>
+
+					<h3>Task 3: Research Project</h3>
+					<p>I joined an interest group of <strong>Natural Language Processing</strong> and I did a quasi-research topic on <strong>Chinese Word Segmentation</strong> under the supervision of <a href="http://www.comp.nus.edu.sg/news/2010_ng_hwee_tou.html">Prof. Ng Hwee Tou</a>. He offered me a part-time research paid job so that I could work more in the December holiday of that year. Besides meeting me once per two weeks, he also appointed a PHD student to closely monitor my progress. Under such supervision, I did a comprehensive literature review on many latest papers in this subfield, reproduced the steps and results in the experiment he&#39;d taken in an unpublished paper in building an improved version of Chinese word segmenter, and developed a few tools to facilitate his research works. Although as a sophomore I might only contribute to my supervisor&#39;s research to a small extent, it was quite important that through this I had a much more realistic picture of a typical research process in my mind.</p>
+					<p><img src="img/star_img.png">My final project report: <a href="assets/spc/Project_Report.pdf">Exploiting Additional Training Corpora for Chinese Word Segmentation</a></p>
+
+					<h3>Task 4: Study Research Methodologies and Complete a Tough Take-home Exam</h3>
+					<p>So throughout the course, we were taught a set of research approaches and methods, e.g. how some scientific experimentation approaches can produce misleading results. Also, we learnt approaches in how to read or write research papers. On top of that, we also learnt some algorithms and analyzed their benefits and drawbacks.</p>
+					<p>At the end of the semester, we were asked to complete a take-home exam within two days. It sounds great, isn't it? TAKE HOME EXAM. That means we could discuss among our friends and come up with solutions together. In fact, all the students who took the module were likely from the SPC programme and were all quite smart. However, this also meant that the questions could be so tough that even we discussed together we might still have no clues! And indeed they were.</p>
+					<p>This is <a href="assets/spc/CS2305STakeHomeExam.pdf">my answer</a> to the take-home exam. Of course, this was produced after two sleepless nights. And it was produced after I discussed with three other smart friends who also underwent two sleepless nights... The questions were difficult to a typical CS sophomore. But they were really good in training one's reasoning abilities.</p>
+				</section>
+				<section id="ai">
+					<div class="page-header">
+						<h1>Artificial Intelligence</h1>
+					</div>
+					<p>I took CS3243 Foundations of Artificial Intelligence in Year Two. This is another must-take course for CS major students. The topic looks very fascinating to many outsiders: there have been a lot of sci-fi movies around this topic. Indeed it is fascinating, but in a way different from what's expected by outsiders. It requires intensive algorithmic planning and logic reasoning. There is also some Maths involved.</p>
+					<p>The list of topics we've covered was just quite common in many AI introductory course. The more interesting part of this module would be the three projects I've worked with my two other friends. </p>
+					<h4>Project 1: Pipe Dream</h4>
+					<p>Most of us have played this pipe game before. <img src="img/pipegame.jpg" class="pictureInText"> In this game, the goal is to lay pipe to divert ooze from a gushing sewer main break into a system of pipes to keep it from leaking out as long as possible.</p>
+					<p>We were of course not asked to implement this pipe game. Instead, we were asked to design an intelligent agent which can &#34;play&#34; this game well. Our intelligent agent should be able to obtain a good score in the pipe game. The higher the score it can obtain, the more intelligent it is, and therefore the higher our grade for this project would be.</p>
+					<p>We adapted the <strong>Recursive Best-First Search (RBFS) as the search algorithm</strong> in this agent. At any stage during the game, the agent needs to determine in which slot of the board the next given piece can be place. Therefore, it needs a search algorithm which can tell it the most suitable next slot. In each step, we keep track of the best and second best choices up to five levels. This is to prevent the agent from committing some shortsighted mistakes if it simply picks the best choice at the moment.</p>
+					<p>So how did we decide which is a better choice at each step? We designed a <strong>Utility Function</strong> indicate the desirability of a given state in this game. Read <a href="assets/CS3243_Ass1_report.pdf">this final report of our project</a> to see the details of the utility function, as well as the search algorithm.</p>
+					<br>
+					<h4>Project 2: Robot Navigation in Maze</h4>
+					<p>This was a really fun project^_^. It was about designing algorithm to let a robot learn how to navigate through an unknown maze. <img src="img/robot.jpg" class="pictureInText1"> We assembled the robot from a LEGO kit provided by the school and played around it.</p>
+					<p>We adapted <strong>the iterative version of backtracking search as the search algorithm</strong>. It is used for a depth-first search that choose to navigate towards next node whenever it is legal; it will backtrack to the previous node whenever there's no more legal next nodes from which the current node to choose. There were two phases: exploration and backtracking. In the exploration phase, the next node must be a legal square for the robot to move to. During backtracking phase, the robot moves back one cell along its original path. </p>
+					<p>We also came up with a creative way of implementing the 4X4 maze in our codes: we used a 7X7 array to store the maze. Why? This was because we were not given the information about the starting point of the robot in the maze: it could start anywhere. So in our 7X7 array, we could simply let the middle of the array (i.e. coordinates {3, 3}) to be the starting point. As the robot navigate inside the maze, the environment of some Square nodes would be updated; after the robot completes navigation (either it reaches goal cell or it explores the whole maze and finds it unsolvable), at most there will be 16 Square nodes fully explored, constructing a 4X4 maze configuration inside the 7X7 Square array. </p>
+					<img src="img/7times7array.jpg" class="imgCenter">
+					<p>Perhaps the more time-consuming part was to deal with the Lego robot. The RCX robot we used is quite old and thus there are a lot of engineering problems (inconsistent walking distance, inaccurate rotation angles and imbalanced power of two sides) despite of the correct algorithm. To deal with this, Setpower method is used to adjust the imbalanced power of the left motor and the right motor. Individual opposite rotation of the wheels is used to adjust the rotation angle. </p>
+					<p>This is <a href="assets/cs3243_ass2_presentation.ppt">our presentation slides</a>. We obtained a nearly perfect score in this project and the lecturer even took a video of our robot successfully navigating through the maze!</p>
+					<br>
+					<h4>Project 3: Text Categorization</h4>
+					<p>This was related to the problem of <strong>Document Classification</strong>. We were asked to use kNN Classification method and Decision Tree method separately to categorize any documents given. </p>
+					<p>1. kNN Classification method: </p>
+					<p>The basic idea of kNN classification is that the category of a given document is determined by the categories of its k nearest neighbors. For example, if k = 5, the nearest 5 neighbors of a document contains 3 from category A, 1 from category B and 1 from category C, this document is classified as in category A.</p>
+					<p>2. Decision Tree method: </p>
+					<p>The text categorization process is divided into two stages: training stage and testing stage. Our intelligent agent needs to be 'trained' first by learning from the documents which were already categorized correctly. Then it could proceed to 'test' or start working to categorize some documents. We then look at the true categories of these test documents and compare them with the results from the agent, and concluded whether it was useful in doing the works.</p>
+					<p>In <a href="assets/CS3243_Ass3_report.pdf">this final report</a>, you could see the details of our design in both methods of text categorizations, as well as the evaluations on the accuracy of results.</p>
+				</section>
+				<section id="algorithms">
+					<div class="page-header">
+						<h1>Algorithms</h1>
+					</div>
+					<p>Algorithms was one of my specializations in SoC (The other one is <a href="#db">Database Systems</a>).  Although I did obtain A+ for both CS3230 and CS4231<img src="img/Happy_smiley_face.png">, It was most probably because Prof. Yu Haifeng's teaching style was quite suitable for me: I found that I absorbed his teaching materials very quickly than other students. I'm also not sure why... I couldn't say that I am good at algorithms because everyone, including me, knows that this is a difficult field. What I could only say is that I like to spend time thinking and solving challenging logic questions.</p>
+					<h3>CS373: Theory of Computation</h3>
+					<p>I attended this course in University of Illinois at Urbana-Champaign as an exchange student. All the course materials about <a href="http://courses.engr.illinois.edu/cs373/fa2009/">CS373 Fall 2009</a> are still currently available online. 
+					</p>
+					<p>The most noticeable difference I could see in this class would be the use of blackboard: the lecturer used the most traditional chalk and blackboard to teach. I only saw this mode of teaching when I was studying in a classroom in China and never saw this in Singapore at all. The lecture theatre was not very big. The lecturer seemed to be quite popular among students and therefore, the lecture threatre was always full--I need to go there a few minutes earlier or else I could only sit at the last row. Sitting at the last row might be good for a class using projector, because while you could enjoy your own sweet time at the cozy corner of the room, you could also listen and watch the lecture slides clearly. But here it was different: you couldn't see the words on the blackboard if you sit too far away! </p>
+					<p>The course was very intellectually stimulating. Though this is a very theoretical class, many students were enthusiastic in raising questions to lecturer. Although their questions were not mature, the fact that they came up questions to new concepts so quickly did impress me a lot. I think students in Asian countries might need to learn such proactive attitude. </p>
+					<p>The most impressive part leaving in my mind about this course would be the Sipser textbook: 'Introduction to the Theory of Computation'. I read the whole book for more than three times in that exchange semester, in the UIUC engineering library.</p>
+					<br>
+					<h3>CS3230: Design and Analysis of Algorithms</h3>
+					<p>As what the name suggested, the course taught students how to design and analyze algorithms. This course could be seen as an advanced version of CS1102. The course is maths-intensive and requires a lot of abstract thinking ability.</p>
+					<p>Here are some topics we've covered (this list is not comprehensive!):
+						<dl class="dl-horizontal">
+							<dt>Time/Space Efficiency</dt>
+							<dd>Asymptotic Upper/Lower/Tight Bounds, L'Hospital's Rule, etc.</dd>
+							<dt>Recurrence Relations</dt>
+							<dd>Asymptotic Solutions to Recurrence Relations, Master Theorem, etc.</dd>
+							<dt>Sorting</dt>
+							<dd>Many different sorting methods and how to calculate their time/space complexity, lower bound on comparision-based/non-comparision-based sorting, etc.</dd>
+							<dt>Selection</dt>
+							<dd>Randomized/Deterministic Selection algorithms (selecting the kth smallest/largest number) and their analysis</dd>
+							<dt>Text Search</dt>
+							<dd>Different approaches to search text, text search with O(n) complexity, etc.</dd>
+							<dt>Dynamic Programming</dt>
+							<dd>The Problen of Longest Common Subsequence Motivated, Knapsack Problem, etc.</dd>
+							<dt>NP-Complete Problems</dt>
+							<dd>The Maximum Independent Set Problem, The Maximum Clique Problem, The Hamiltonian Cycle Problem etc. Proving NP-Completeness.</dd>
+						</dl>
+					</p>
+					<p>The lecturer set up a lot of challenging problems in homeworks. These were quite useful for us to understand the learning materials. In fact, I quite enjoyed solving them^_^. </p>
+					<br>
+					<h3 id="parallel">CS4231: Parallel and Distributed Algorithms</h3>
+					<p>Since I had very good experience in learning CS3230 (challenging, intellectually stimulating, and yet I get good grades for it), it was natural for me to continue a more advanced course in algorithms taught by Prof. Yu again. So this time, I picked CS4231.</p>
+					<p>In this course, most of the teaching ideas came from the book 'Concurrent and Distributed Computing in Java' written by Vijay K. Garg. However, the book was actually not very well written, although it contained quite some good ideas. Prof. Yu adapted the contents of that book quite significantly in order to make those materials become much easier to understand. Sometimes he rephrased the description of a particular algorithm in that book in a totally different way. But one thing was clear: solely reading the textbook was hard for me to grasp the concepts unless I attended his lectures and tried out some homeworks.</p>
+					<p>Some of the topics we've covered (not comprehensive) are:
+						<dl class="dl-horizontal">
+							<dt>Synchronization Primitives</dt>
+							<dd>&nbsp;Concepts for parallel algorithms, such as critical sections, the three properties needed for a good concurrent algorithm, etc. (Some were covered in <a href="#os">CS2106</a> already)</dd>
+							<dt>Consistency Problems</dt>
+							<dd>Sequential Consistency, Linearizability...</dd>
+							<dt>Waitfree Synchronization</dt>
+							<dd>Atomic Snapshots, Consensus, etc...</dd>
+							<dt>Models and Clocks</dt>
+							<dd>Happen-before Relation, Logical/Vector/Matrix Clocks, etc.</dd>
+							<dt>Resource Allocation</dt>
+							<dd>Mutual Exclusion Problem, Lamport's Algorithm, Dining Philosopher Algorithm (again!), etc. </dd>
+							<dt>Message Ordering</dt>
+							<dd>Causal Ordering, total order for multicast messages, etc. </dd>
+							<dt>Global Snapshot</dt>
+							<dd>&nbsp;</dd>
+							<dt>Self-Stablization</dt>
+							<dd>The Rotating Privilege Problem, Self Stabilizing Spanning Tree Algorithm</dd>
+						</dl> 
+					</p>
+					<p>Note that for each algorithm we've learnt, we also need to know how to prove its correctness. And we need to apply the techniques in correctness proof to other random algorithms given.</p>
+				</section>
+				
+				<section id="se">
+					<div class="page-header">
+						<h1>Software Engineering</h1>
+					</div>
+					<p>When I tried to recall the courses I've taken in Software Engineering, I couldn't talk without <a href="http://www.comp.nus.edu.sg/~damithch/">Dr. Damith C. Rajapakse</a>, because he's the lecturer of two of the SE courses I've taken and the supervisor of <a href="#fyp">my final year project</a> in software engineering. Since he had some industrial experiences, he used a lot of real-world exmaples during lectures to illustrate the abstract concepts in SE. This made his teaching style quite welcomed among students, or at least among my social circle (not sure about other students, as most of my friends in SoC are geeky programmers). This again reinforces the idea that Software Engineering is a computing subfield which is very very closely related to the industrial world.</p>
+					<h3>CS2103 Software Engineering</h3>
+					This module serves as an introductory module for students to understand some concepts in software engineering, such as Unified Modelling Language (UML). It also covers different type of diagrams commonly used in software engineering cycles, such as Use Case Diagram, Sequence Diagram, State Chart, etc. This module was co-lectured by both Dr. Damith and Dr. Bimlesh Wadhwa (see <a href="#urop">UROP</a>).</p>
+					<p>In this module we had done a software by strictly comforming to the practices of software engineering taught in classes. It was a library system. This is also my first time learning <strong>Three-tier Architecture</strong> and utilized it into the implementation of my project. Since then, the layered design of data-logic-presentation had been built into my mind. In almost all my subsequent software designs since CS2103, although there are undoubtedly certain variations, the basic structure of my software is always highly similar to this architecture. In this sense, CS2103 was quite a useful module to me.</p>
+					<h4>Helping in Teaching</h4>
+					<p>Nope, I did not go to lecture theatre or tutorial room to preach to a group of junior students, as what I did in CS1101. I simply helped Dr. Bimlesh to write a MineSweeper program, which strictly follows the coding standards and clear architecture design, so as to give students a sample example of software design to study. I used my most familiar language -- Java -- to write this problem and provided one text-based version and one GUI version. For the GUI version, I used JavaFX to implement. </p>
+					<br>
+					<h3>CS3215 Software Engineering Project</h3>
+					<p>The course has 8 modular credits -- same weight as two normal courses. However, according to how I experienced, its intensity is more than that of two courses combined. I won't be scared by its intensity, because I also learnt quite a lot from it.</p>
+					<p>The lecture component is interesting, though minimal. We learnt some popular techniques in dealing with big-scaled projects in real world and their benefits and drawbacks. For example, we learnt about keeping track of bugs' life cyles -- from raising it to finally solving and closing it.</p>
+					<h4>The Project: Test, Design, Code, Test, Design, Code, Test...</h4>
+					<p>The major component of this module is the project. I worked with other five smart guys and girls: Zi, Caleb, Longwu, Sufeng and Wendi. It was a wonderful experience to work with programmers who are very good and yet not too good ('cos we were all undergraduates) that you almost cannot contribute anything. Although the project was so intensive that quite often I did not have enough sleep in order to come up with better deliverables, I would say the feeling of accomplishment was so good that it overcame the pain.</p>
+					<p>So what did we do?</p>
+					<p>We started off from an old software called Code Analyzer Plugin (CAP) given by the lecturer. This tool is supposed to do static analysis on a fictitious <abbr title="Object-Oriented Programming">OOP</abbr> programming language called <abbr title="Basic Object-Oriented Language">BOOL</abbr>. We did intensive <strong>black-box testing</strong> on CAP. This required careful design on the test plans in order to test whether the software had satisfied every aspect of the requirement. We designed a large set of test cases. In the end, we submitted the bugs we've found from the software.</p>
+					<p>Then, the lecturer released the existing bugs of this software to us. Some were tricky and not found by our testing. We also identified a few of weird bugs that were not known before. From this, we learnt that a non-trivial software can never be perfect: there will always be room for further enhancement and bugs waiting to be discovered and resolved.</p>
+					<p>After that, we were asked to do an AutoTester to <strong>automate system testing</strong> of CAP. This was actually a mini-project within the big project! We designed the AutoTester and debugged it. And then we did intensive testing on this thing which was supposed to do testing on CAP... (Don't be confused!) It was a GUI-based tool. It takes in a set of customized test files in XML format and some source files in BOOL and outputs the result files in XML format. Of course, we won't show users XML-formatted things. Everything was nicely presented in web pages.</p>
+					<p>Maybe a picture is worth more than a thousand words: </p>
+					<img src="img/AutoTester.png"> <br>
+					<p>We had gone through three complete software cycles to enhance this AutoTester. For the final version, we had a well-documented <a href="assets/se3215/A15.AT3.0.pdf">Design Report</a> and a <a href="assets/se3215/AT3.0UserManual.pdf">User Mannual</a> for it. (Password: xiaonizi)</p>
+					<p>Next, we were given the source code of CAP and did some works on it, such as <strong>refactoring</strong>. We analyzed its existing implementation and commented on its drawbacks and potential places for improvements. Based on this, we came up with our own <strong>system design</strong> of the tool and named it &#34;Bug Hunter&#34;. <img src="img/CAP.png" class="pictureInText"> </p>
+					<p>In the following, we did some task distribution among ourselves. Since the end product consisted of mainly two parts: Code Processing Subsystem (CPS) and Query Processing Subsystem (QPS). Each subsystem consists of three or four components. It was thus quite easy to divide the code into six portions. (Again, this project was indeed well designed that it was very suitable for students to do team works.) I was allocated to manage the Parser component of QPS. The big picture of the software is roughly like the diagram on the right. </p>
+					<p>Based on this design, we coded intensively. Of course, the AutoTester was very useful in this case. It helped us monitor the progress of our product. This was <strong>Test-Driven Development</strong>. We also used contribution tracker and some other tools to monitor our progress.</p>
+					<p><img src="img/star_img.png">This is <a href="assets/se3215/3215Finalreport.pdf">our final report</a>~~~ But I doubt you have the patience to read it through because it had 67 pages. (Password: xiaonizi)</p>
+				</section>
+				<section id="urop">
+					<div class="page-header">
+						<h1>Undergraduate Research Opportunities Program (UROP)</h1>
+					</div>
+					<p>I would encourage my juniors who aim for a first class honours in CS to try out the UROP program. This is a way to train your research skills and prepare yourself for a even more intensive final year project, which is compulsory for gaining a first class honours in SoC.</p>
+					<p>In SoC, if a CS major student took a UROP project which spans across two semesters, he or she could be exempted from the core requirement of CS3215 'Software Engineering Project'. However, I chose to do both the UROP and CS3215, so that I could have the best of both worlds then. Since I was in an overseas exchange program for one semester, I could only afford to have one-semester UROP project. However, this project was intensive and the time I spent on it were definitely beyond the workload for a typical 4-modular-credits course.</p>
+					<p>I named the final product I delivered in this research project as <strong>Google Docs Explorer</strong>. The initial look on my project might make one think that this is an implementation-oriented project. But in fact it involved a lot of research components. Firstly, the whole concept about users' unsatisfaction on using Google Docs interface came to me very vaguely from Dr. Bimlesh at the beginning. It required some creativity in making the abstract ideas to become concrete. Secondly, there had been research and exploration made on previous learning of Google Docs interface (its synchronization of offline documents and its security issues) and Windows explorer. Lastly, like other research projects in the world, this project had never been intensively and purposefully conducted before. In fact, when Google released its Google Drive this year, I found that its Desktop version was highly similar to the tool I've developed two years ago! </p>
+					<p>The following is the abstract which came from my final report:</p>
+					<p><em>Based on significant studies on Google Docs interface and Windows explorer, it is found that there is a need to design a Windows explorer virtual shell replacing the existing Google Docs interface, in order to offer Google Docs users an interface with improved usability and security. To achieve this, Google Docs Explorer, a high-fidelity prototype of such a virtual shell, is developed in this project. It is a tool allowing users to manage their online Google Docs files on a nicely designed interface which looks similar to their familiar windows explorer. This prototype is close to a final delivered system, as users could access almost all functions available on the original Google Docs interface. It connects to the Google cloud via the Google Documents List Data API; and there are a few problems of the system due to some deficiencies of this API. This report mainly presents details of system design and implementation of Google Docs Explorer, and evaluates how well it has been implemented in terms of usability and security consideration, as well as points out some of its limitations and possible improvement.</em></p>
+					<p>Below are some snapshots of my 'Google Docs Explorer':</p>
+					<p><img src="img/LogInWindow.jpg">&nbsp;&nbsp;Log-in Window</p>
+					<p><img src="img/MainWindow.jpg">&nbsp;&nbsp;Main Window</p>
+					<p><strong>Algorithms</strong> had been designed carefully to ensure some functionalities to work. This included 'big' parts such as how the software can recursively download the online documents from Google Docs into a hierarchy of folders. This also included 'small' tricky parts. For example, when users are viewing documents and folders back and forward, the software needs to maintain a history path and considers all combination possibilities of user choices.</p>
+					<p>Recursion used in data retrieval algorithm. Skip the pseudo code if you get confused:-P</p>
+					<p><img src="img/pseudocode.jpg"></p>
+					<p><img src="img/star_img.png">This is my <a href="assets/urop/UROP_final_report.pdf">final report</a> (password: uropxiaoni) but it is a big lengthy. To understand the project quickly, you might find <a href="assets/urop/Presentation.pptx">this presentation</a> more useful.</p>
+				</section>
+				<section id="fyp">
+					<div class="page-header">
+						<h1>Final Year Project (Dissertation)</h1>
+					</div>
+					<p>My final year project was to think of the best ways to create <strong>a cloud-based SaaS peer-evaluation tool for student team projects</strong> so that college coodinators (or instructors) and students might benefit from it in the future. I did this project under the supervision of Dr. Damith, who was also my teacher for CS3215 software engineering project. Undoubtedly, this project was in the realm of software engineering. In fact, I had gone through two full cycles throughout the project -- requirement gathering (brainstormed together with Damith and another student Gerald), design (core part of the project), implementation, testing (comprehensive and thorough testing on the application). But for me, it was much beyond simply delivering a product. There were a lot of tricky parts in designing the system and one needs to have good logical thinking in coming up with a solution which can meets all different aspects of requirement.</p>
+					<p>Below is the abstract of my final report:</p>
+					<p><em>Peer evaluation is commonly used technique for assessing students' contribution levels in team projects. TeamMate is an online peer-evaluation system we designed, developed and deployed on Google App Engine cloud platform. TeamMate has undergone two iterations of software development life cycle to improve its modularity, usability, security, extensibility and scalability, and to better accommodate coordinators and students' different needs during peer evaluations. The final product has been thoroughly tested on its functionalities and performance; and overall it is proved to be an efficient and scalable system.</em></p>
+					<h4>Data Schema</h4>
+					<p>There was one part in the design phase which took me quite some time: the data schema. I had changed it over and over again in order to come up with a more compact and versatile one. I even came up with <strong>time and space complexity measures</strong> in different scenarios of using the data schema. </p>
+					<p><img src="img/dataschemas.jpg"></p>
+					<p>Note that in the user scenarios, we always considered this system to be used by many instructors and many students at one time. So students might join many different project teams in many different courses under different instructors. And yet our system needs to ensure that each student could only see one single page showing a list of projects from different courses.</p>
+					<p>In the first data schema, I assumed that students remain in the same project team for the same course, i.e., in the CS3243 course I was working with two other students, Zeng Qiang and Qiao Li, for all three projects and I never changed my teammates.</p>
+					<p>In the second data schema, students can switch teams between evaluations. For example, instructors might choose to let students change teammates in different projects. This is either to let students interact more among themselves, or to ensure fairness so that some poor guys need not struggle with their freerider teammates forever, or whatever the reasons.</p>
+					<p>Each tiny and delicate part of the data structure had its own special purpose. For example, the 'EvaluationTeam' component is to reduce time complexity of data retrieval for different purposes by sacrificing a little bit in terms of space complexity.</p>
+					<p><img src="img/star_img.png">To know more details about the design of this tool, you could download <a href="assets/fyp/FYP_final_report.pdf">my final report</a>. (Hover <abbr title="fypxiaoni">this</abbr> for password) </p>
+					<h4>Demo</h4>
+					<p>Here are a few of the demonstration videos on the final product. The product had much more functionalities than what's shown here. Here is to give audiences a glimpse on the features available.</p>
+					<br>
+					<div class="row-fluid">
+						<ul class="thumbnails">
+							<li class="span5">
+								<div class="thumbnail">
+									<a href="assets/fyp/howtodoevaluation.mp4" class="thumbnail"><img src="assets/fyp/howtodoevaluation_snapshot.jpg" alt=""></a>
+									<div class="caption">
+										<p>How to let students do evaluation on their teammates</p>
+									</div>
+								</div>
+								
+							</li>
+							<li class="span5 offset1">
+								<div class="thumbnail">
+									<a href="assets/fyp/howtoregisternewclass.mp4" class="thumbnail"><img src="assets/fyp/howtoregisternewclass_snapshot.jpg" alt=""></a>
+									<div class="caption">
+										<p>How to let students register new classes</p>
+									</div>
+								</div>
+							</li>
+							<li class="span1">&nbsp;</li>
+						</ul>
+					</div>
+					<p>This project had a poster presentation on the <a href="http://conferences.computer.org/cseet/2011/CSEET_2011/Program.html">24th IEEE-CS Conference on Software Enginnering Education and Training</a>. You could see an excerpt downloadable as PDF format from the digital library of IEEE Computer Society <a href="http://www.computer.org/csdl/proceedings/cseet/2011/0349/00/05876151-abs.html">here</a>.</p>
+				</section>
+				<section id="others">
+					<div class="page-header">
+						<h1>Others</h1>
+					</div>
+					<p>So far I've covered most CS courses I've taken in NUS. I omitted some minor ones, such as 'Computing and Society', which was more on humanities side of the Computing technology (e.g. how the IT technology influence our lives, etc.). </p>
+					<p>I also studied two courses in University of Illinois at Urbana-Champaign: CS418 Interactive Computer Graphics, and CS421 Programming Languages and Compilers. Moreover, I studied one more course in <abbr title="Human-Computer Interaction">HCI</abbr> in NUS. I would briefly cover each of these three courses below.</p>
+					<h3>Graphics</h3>
+					<p>In UIUC, beginners to graphics were supposed to take some introductory courses before jumping straightly into the 400-level courses such as CS418. But I did so, although I was aware that I might not get good grade if I took a too advanced version of graphics course. Of course, my grade in UIUC was not computed into mine in NUS. So I was brave enough to explore a more difficult class. Their <a href="http://graphics.cs.illinois.edu/">graphics website</a> were still there on Internet.</p>
+					<p>We learnt many core concepts in computer graphics and did some lab assignments using OpenGL. The components on polygonal modeling, transformation and viewing involved a lot of linear algebra knowledge. So if one wants to ace in graphics, one needs to be proficient in linear algebra calculations and has some good sense in spacial visualizations.</p>
+					<h3>Programming Languages</h3>
+					<p>Another advanced course in UIUC. In fact, sometimes I felt that I shouldn't take such a difficult course, even though grade was not important. There was another course in programming language in UIUC -- CS321 -- which was the pre-requisite of the CS421 (their website <a href="http://courses.engr.illinois.edu/cs421/fa2009/">here</a>). Since I jumped straight away to a more challenging course, I felt a bit confused at the beginning and took some time to study the pre-requisites in order to catch up with the rest.</p>
+					<p>The language we've used thoughout the course is <strong><a href="http://caml.inria.fr/ocaml/">OCaml</a></strong>. Very rarely seen language. But it was good to be used as a teaching language to let students understand better on the constructs of programming languages.</p>
+					<h3>Human-Computer Interaction</h3>
+					<p>Sometimes I feel that HCI is quite a 'soft' topic compared to other subfields in CS. Moreover, after I read <a href="http://books.google.com.sg/books/about/Interaction_Design.html?id=b-v_6BeCwwQC&redir_esc=y">the textbook</a> -- the one recommended by almost all people in the HCI community, I felt that most topics had already been comprehensively covered by the three ladies who wrote this book. Most concepts were common sense and there had already been some pioneers done a systematic summary on all these concepts.</p>
+					<p>Four of us did a project using Flash. It was not difficult. And it was quite fun to learn Flash as well. The problem was that when we applied those concepts we've learnt in class into the deliverable, there were always conflicts in the aesthetic side of the product. When we presented the product to the lecturer, I had the feeling that this is an arts course and he was judging the artistic value of our works, instead of the technical challenges we've overcome. Of course, an A- grade was okay for me for this course. But I sincerely feel that it might be done better. </p>
+					<p>Nevertheless, I learnt from Internet that HCI is actually an important field nowadays, as the interaction between non-tecnical users and computing systems becomes more and more prevalent. This makes research in this field quite hot.</p>
+				</section>	
+			</div>
+		</div>
+		<hr>
+
+		<footer>
+			<p class="pull-right">&copy; LXN 2012</p>
+		</footer>
+	</div>
+	<script src="js/jquery-1.8.0.js" type="text/javascript" ></script>
+	<script src="js/bootstrap.js" type="text/javascript" ></script>
+	<script src="js/myJS.js" type="text/javascript" ></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45839103-1', 'zvaya.com');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
